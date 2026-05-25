@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizon IT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+ <!-- NAVBAR -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo"><div class="logo-icon">H</div>Horizon</a>
+      <ul class="nav-links">
+        <li><a href="/services">Services</a></li>
+        <li><a href="/solutions">Solutions</a></li>
+        <li><a href="/insights">Insights</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/careers">Careers</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-outline">Get Free Audit</a>
+        <a href="#" class="btn-primary">Talk to Sales</a>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <span class="hero-tag">IT Solutions &nbsp;·&nbsp; Trusted by 180+ Companies</span>
+          <h1>Reliable technology that lets your business move faster.</h1>
+          <p>Cloud, cybersecurity, AI integration, and managed IT services — delivered with clarity, care, and zero drama.</p>
+          <div class="hero-btns">
+            <a href="#" class="btn-primary">Book Free Strategy Call</a>
+            <a href="#" class="btn-outline">See Our Work</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="uptime-card">
+            <div class="uptime-icons">
+              <div class="uptime-icon">☁️</div>
+              <div class="uptime-icon">🔒</div>
+            </div>
+            <div class="uptime-number">99.98%</div>
+            <div class="uptime-label">Average uptime guaranteed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PARTNERS -->
+  <section class="partners">
+    <div class="container">
+      <p class="partners-label">Certified Partners &amp; Platforms We Work With</p>
+      <div class="partners-logos">
+        <div class="partner-item"><div class="p-icon p-ms">M</div> Microsoft</div>
+        <div class="partner-item"><div class="p-icon p-aws">A</div> AWS</div>
+        <div class="partner-item"><div class="p-icon p-ibm">I</div> IBM</div>
+        <div class="partner-item"><div class="p-icon p-cisco">C</div> Cisco</div>
+        <div class="partner-item"><div class="p-icon p-gcp">G</div> Google Cloud</div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item"><div class="stat-value">99.98%</div><div class="stat-desc">Average uptime</div></div>
+        <div class="stat-item"><div class="stat-value">42%</div><div class="stat-desc">Avg. cost reduction</div></div>
+        <div class="stat-item"><div class="stat-value">&lt; 2 hrs</div><div class="stat-desc">Average response time</div></div>
+        <div class="stat-item"><div class="stat-value">180+</div><div class="stat-desc">Companies transformed</div></div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">What We Do</span>
+        <h2>Expert solutions, built for real business needs</h2>
+        <p>From cloud migrations to AI automation — we handle the complexity so you can focus on growth.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">☁️</div>
+          <h3>Cloud Migration &amp; Infrastructure</h3>
+          <p>Seamless transition to secure, scalable cloud environments. Risk-managed migration backed by a proven framework.</p>
+          <a href="#" class="service-link">Explore service →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>Cybersecurity &amp; Compliance</h3>
+          <p>Proactive threat protection with full compliance support for GDPR, SOC 2, and ISO 27001. Sleep better knowing you're covered.</p>
+          <a href="#" class="service-link">Explore service →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>AI Integration &amp; Automation</h3>
+          <p>Unlock efficiency gains with tailored AI workflows — from intelligent document processing to predictive analytics.</p>
+          <a href="#" class="service-link">Explore service →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🕐</div>
+          <h3>24/7 Managed IT Support</h3>
+          <p>Human-first support with proactive monitoring and lightning-fast resolution. Real engineers, not bots.</p>
+          <a href="#" class="service-link">Explore service →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- WHY HORIZON -->
+  <section class="why">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-left">
+          <span class="tag why-tag">Why Horizon</span>
+          <h2>We do IT differently.</h2>
+          <p>Most IT firms react to problems. We prevent them - and when issues arise, you speak to an engineer, not a ticket queue.</p>
+        </div>
+        <ul class="why-list">
+          <li>
+            <span class="why-num">01</span>
+            <div class="why-item-text">
+              <h4>Real humans, not ticket queues</h4>
+              <p>Speak directly with experienced engineers who understand your business. No hand-offs.</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-num">02</span>
+            <div class="why-item-text">
+              <h4>Proactive, not reactive</h4>
+              <p>Our monitoring stack catches anomalies before they become incidents.</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-num">03</span>
+            <div class="why-item-text">
+              <h4>Transparent pricing</h4>
+              <p>Clear monthly costs with no hidden fees or overage surprises.</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-num">04</span>
+            <div class="why-item-text">
+              <h4>Solutions that scale with you</h4>
+              <p>From startup to enterprise — flexible architecture that grows with you.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CASE STUDIES -->
+  <section class="cases">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Case Studies</span>
+        <h2>Proven impact for companies like yours</h2>
+      </div>
+      <div class="cases-grid">
+        <div class="case-card">
+          <div>
+            <div class="case-industry">Global Logistics</div>
+            <h3>Reduced system downtime by 87% and cut infrastructure costs by 41%.</h3>
+          </div>
+          <a href="#" class="case-link">Read Case Study <span class="arrow-line"></span> →</a>
+        </div>
+        <div class="case-card">
+          <div>
+            <div class="case-industry">Regional Healthcare</div>
+            <h3>Achieved full SOC 2 compliance in under 10 weeks.</h3>
+          </div>
+          <a href="#" class="case-link">Read Case Study <span class="arrow-line"></span> →</a>
+        </div>
+        <div class="case-card">
+          <div>
+            <div class="case-industry">Fintech Startup</div>
+            <h3>Implemented AI fraud detection with 94% accuracy in first quarter.</h3>
+          </div>
+          <a href="#" class="case-link">Read Case Study <span class="arrow-line"></span> →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Client Voices</span>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="quote-mark">"</div>
+          <blockquote>Horizon didn't just fix our IT problems - they became a true strategic partner and changed how we think about technology.</blockquote>
+          <div class="testi-author">
+            <div class="avatar">SC</div>
+            <div class="author-info">
+              <div class="name">Sarah Chen</div>
+              <div class="role">CTO, Nexify Logistics</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="quote-mark">"</div>
+          <blockquote>Finally, an IT provider that communicates clearly and actually delivers on time. No surprises, no excuses.</blockquote>
+          <div class="testi-author">
+            <div class="avatar">MT</div>
+            <div class="author-info">
+              <div class="name">Micheal Torres</div>
+              <div class="role">CEO, Vertex Health</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="quote-mark">"</div>
+          <blockquote>Horizon didn't just fix our IT problems - they became a true strategic partner and changed how we think about technology.</blockquote>
+          <div class="testi-author">
+            <div class="avatar">SH</div>
+            <div class="author-info">
+              <div class="name">Simone Hanikel</div>
+              <div class="role">Head of Operations, Russ Capital</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CTA BANNER -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-text">
+          <h2>Ready to simplify your IT and accelerate growth?</h2>
+          <p>Book a strategy call. We'll review your setup and chart honest next steps.</p>
+        </div>
+        <a href="#" class="btn-dark">Start Your Free Consultation</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo"><div class="logo-icon">H</div>Horizon</a>
+          <p>Reliable technology for companies that need more than just support.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services">Cloud Services</a></li>
+            <li><a href="/services">Cybersecurity</a></li>
+            <li><a href="/services">AI Automation</a></li>
+            <li><a href="/services">Managed IT</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/case-studies">Case Studies</a></li>
+            <li><a href="/insights">Insights</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact</h4>
+          <p>horizonit@gmail.com</p>
+          <p>+435687123644</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="c-badge">
+          <div class="c-circle">©</div>
+          2026 Horizon IT Solutions. All rights reserved
+        </div>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+</body>
+</html>

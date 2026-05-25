@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Horizon IT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo"><div class="logo-icon">H</div>Horizon</a>
+      <ul class="nav-links">
+        <li><a href="/services">Services</a></li>
+        <li><a href="/solutions">Solutions</a></li>
+        <li><a href="/insights">Insights</a></li>
+        <li><a href="/about" class="nav-active">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/careers">Careers</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-outline">Get Free Audit</a>
+        <a href="#" class="btn-primary">Talk to Sales</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag">About Us</span>
+      <h1>We started Horizon because <br>IT support deserved better</h1>
+      <p>Too many businesses were stuck with slow, reactive IT firms that treated them like ticket numbers. We built something different.</p>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="about-mission">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-left">
+          <span class="tag">Our Mission</span>
+          <h2>Technology should enable your business, not slow it down.</h2>
+          <p>We exist to give businesses access to enterprise-grade IT expertise without the enterprise-grade price tag or the enterprise-grade bureaucracy. Clear communication, honest pricing, and engineers who actually pick up the phone.</p>
+        </div>
+        <div>
+          <div class="stats-grid" style="border-radius: 10px; overflow: hidden;">
+            <div class="stat-item"><div class="stat-value">180+</div><div class="stat-desc">Companies supported</div></div>
+            <div class="stat-item"><div class="stat-value">99.98%</div><div class="stat-desc">Average uptime</div></div>
+            <div class="stat-item"><div class="stat-value">8 yrs</div><div class="stat-desc">In business</div></div>
+            <div class="stat-item"><div class="stat-value">42%</div><div class="stat-desc">Avg. cost reduction</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="why" style="border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">What We Stand For</span>
+        <h2>Our values</h2>
+        <p>These aren't wall posters. They're how we make decisions.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🤝</div>
+          <h3>Honesty over sales</h3>
+          <p>We'll tell you when you don't need something. Long-term trust matters more to us than short-term revenue.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Speed without shortcuts</h3>
+          <p>Fast response times and fast delivery — but never at the expense of doing things properly.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔍</div>
+          <h3>Clarity in everything</h3>
+          <p>Plain-language communication, transparent invoices, and no surprises. You always know exactly where things stand.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📈</div>
+          <h3>Built to grow with you</h3>
+          <p>We don't lock you into solutions you'll outgrow. Everything we build is designed to scale alongside your business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">The Team</span>
+        <h2>Engineers, not account managers</h2>
+        <p>Every person at Horizon is technical. When you call, you speak to someone who can actually help.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">JR</div>
+          <div class="team-info">
+            <div class="name">James Reid</div>
+            <div class="role">Founder &amp; CTO</div>
+            <p>15 years in enterprise infrastructure. Previously led cloud architecture at a Fortune 500 logistics firm.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">AL</div>
+          <div class="team-info">
+            <div class="name">Anika Lehmann</div>
+            <div class="role">Head of Cybersecurity</div>
+            <p>Certified ethical hacker and compliance specialist. Led SOC 2 implementations across 40+ organisations.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">MO</div>
+          <div class="team-info">
+            <div class="name">Marcus Obi</div>
+            <div class="role">Lead Cloud Engineer</div>
+            <p>AWS and Azure certified. Specialises in zero-downtime migrations and multi-region infrastructure design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-text">
+          <h2>Want to work with us?</h2>
+          <p>Start with a free strategy call. No commitment, no pressure.</p>
+        </div>
+        <a href="#" class="btn-dark">Book a Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="logo"><div class="logo-icon">H</div>Horizon</a>
+          <p>Reliable technology for companies that need more than just support.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services">Cloud Services</a></li>
+            <li><a href="/services">Cybersecurity</a></li>
+            <li><a href="/services">AI Automation</a></li>
+            <li><a href="/services">Managed IT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/insights">Blog</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="/insights">Insights</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact</h4>
+          <p>horizonit@gmail.com</p>
+          <p>+435687123644</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="c-badge"><div class="c-circle">©</div>2026 Horizon IT Solutions. All rights reserved</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions  Horizon IT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo"><div class="logo-icon">H</div>Horizon</a>
+      <ul class="nav-links">
+        <li><a href="/services">Services</a></li>
+        <li><a href="/solutions" class="nav-active">Solutions</a></li>
+        <li><a href="/insights">Insights</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/careers">Careers</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-outline">Get Free Audit</a>
+        <a href="#" class="btn-primary">Talk to Sales</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag">Solutions</span>
+      <h1>The right solution <br>for your industry</h1>
+      <p>We don't do one-size-fits-all. Every solution we deliver is shaped around your sector, your size, and your goals.</p>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS GRID -->
+  <section class="solutions-section">
+    <div class="container">
+      <div class="solutions-grid">
+
+        <div class="solution-card">
+          <div class="solution-num">01</div>
+          <h3>Healthcare</h3>
+          <p>HIPAA-compliant infrastructure, secure patient data management, and 24/7 uptime for critical systems. We help healthcare providers focus on patients, not servers.</p>
+          <ul class="service-features">
+            <li>HIPAA &amp; GDPR compliance</li>
+            <li>Secure EHR integrations</li>
+            <li>Zero-downtime architecture</li>
+          </ul>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-num">02</div>
+          <h3>Financial Services</h3>
+          <p>Fraud detection, regulatory compliance, and real-time data pipelines for fintech and banking. Built to handle the demands of high-stakes, high-volume environments.</p>
+          <ul class="service-features">
+            <li>SOC 2 &amp; PCI-DSS compliance</li>
+            <li>AI-powered fraud detection</li>
+            <li>Real-time data infrastructure</li>
+          </ul>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-num">03</div>
+          <h3>Logistics &amp; Supply Chain</h3>
+          <p>Scalable cloud systems, IoT integrations, and automation tools that keep your operations moving — even when volume spikes unexpectedly.</p>
+          <ul class="service-features">
+            <li>IoT device management</li>
+            <li>Supply chain automation</li>
+            <li>Cloud-based fleet tracking</li>
+          </ul>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-num">04</div>
+          <h3>Startups &amp; Scale-ups</h3>
+          <p>Flexible, cost-effective IT foundations that grow with you. We help early-stage companies build right from day one — no over-engineering, no tech debt.</p>
+          <ul class="service-features">
+            <li>MVP infrastructure setup</li>
+            <li>Scalable cloud architecture</li>
+            <li>Startup-friendly pricing</li>
+          </ul>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-num">05</div>
+          <h3>Enterprise</h3>
+          <p>Complex migrations, multi-region deployments, and enterprise-grade security for large organisations. We've handled it all — and we document everything.</p>
+          <ul class="service-features">
+            <li>Multi-cloud strategy</li>
+            <li>Legacy system modernisation</li>
+            <li>Enterprise security frameworks</li>
+          </ul>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-num">06</div>
+          <h3>Retail &amp; E-Commerce</h3>
+          <p>High-availability platforms built for traffic spikes, secure payment infrastructure, and data analytics that drive smarter buying decisions.</p>
+          <ul class="service-features">
+            <li>PCI-DSS compliant payments</li>
+            <li>Auto-scaling storefronts</li>
+            <li>Customer analytics pipelines</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-text">
+          <h2>Don't see your industry?</h2>
+          <p>We work across sectors. Let's talk about what you need.</p>
+        </div>
+        <a href="/contact" class="btn-dark">Start a Conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="logo"><div class="logo-icon">H</div>Horizon</a>
+          <p>Reliable technology for companies that need more than just support.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services">Cloud Services</a></li>
+            <li><a href="/services">Cybersecurity</a></li>
+            <li><a href="/services">AI Automation</a></li>
+            <li><a href="/services">Managed IT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/insights">Blog</a></li>
+            <li><a href="/case-studies">Case Studies</a></li>
+            <li><a href="/insights">Insights</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Contact</h4>
+          <p>horizonit@gmail.com</p>
+          <p>+435687123644</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="c-badge"><div class="c-circle">©</div>2026 Horizon IT Solutions. All rights reserved</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
