@@ -11,20 +11,20 @@ import base64
 
 app = Flask(__name__)
 
-# ── CONFIG ───────────────────────────────────────────────────
+# ── CONFIG ──
 app.secret_key = os.environ.get('SECRET_KEY', 'change-this-in-production')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///horizon.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['MAX_CONTENT_LENGTH'] = 5 * 1024 * 1024  # 5MB max file size
 db = SQLAlchemy(app)
 
-# ── ALLOWED FILE TYPES ────────────────────────────────────────
+# ── ALLOWED FILE TYPES ──
 ALLOWED_EXTENSIONS = {'pdf', 'doc', 'docx'}
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-# ── MODELS ───────────────────────────────────────────────────
+# ── MODELS ───
 class ContactSubmission(db.Model):
     id        = db.Column(db.Integer, primary_key=True)
     name      = db.Column(db.String(100), nullable=False)
@@ -47,7 +47,7 @@ class JobApplication(db.Model):
     cover      = db.Column(db.Text, nullable=False)
     submitted  = db.Column(db.DateTime, default=datetime.utcnow)
 
-# ── EMAIL HELPER ─────────────────────────────────────────────
+# ── EMAIL HELPER ────
 def send_email(subject, body, attachment_data=None, attachment_name=None, attachment_type=None):
     try:
         sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
@@ -72,7 +72,7 @@ def send_email(subject, body, attachment_data=None, attachment_name=None, attach
     except Exception as e:
         print(f'Email error: {str(e)}')
 
-# ── ROUTES ───────────────────────────────────────────────────
+# ── ROUTES ───
 @app.route('/')
 def home():
     return render_template('index.html')
